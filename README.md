@@ -1,4 +1,6 @@
-# Kinde Starter Kit - React
+# Utilize Intern
+
+I used kinde for auth follow the below steps after cloning to run it locally
 
 ## Register an account on Kinde
 
