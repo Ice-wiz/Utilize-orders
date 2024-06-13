@@ -77,17 +77,14 @@ const AddOrder = () => {
         );
     });
 
-    // Logic for pagination
     const indexOfLastOrder = currentPage * ordersPerPage;
     const indexOfFirstOrder = indexOfLastOrder - ordersPerPage;
     const currentOrders = filteredOrders.slice(indexOfFirstOrder, indexOfLastOrder);
 
-    // Paginate next page
     const nextPage = () => {
         setCurrentPage(currentPage + 1);
     };
 
-    // Paginate previous page
     const prevPage = () => {
         setCurrentPage(currentPage - 1);
     };

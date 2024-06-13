@@ -11,7 +11,6 @@ export default function LoggedIn() {
   const [orders, setOrders] = useRecoilState(ordersState);
   const [loading, setLoading] = useState(true);
 
-  // Only fetch data if orders are not already loaded
   useEffect(() => {
     if (orders.length === 0) {
       fetch('/data.json')

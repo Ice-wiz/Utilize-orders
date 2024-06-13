@@ -5,15 +5,14 @@ const OrderList = ({ orders }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
-  // Calculate the orders to display on the current page
   const indexOfLastOrder = currentPage * itemsPerPage;
   const indexOfFirstOrder = indexOfLastOrder - itemsPerPage;
   const currentOrders = orders.slice(indexOfFirstOrder, indexOfLastOrder);
 
-  // Calculate total pages
+
   const totalPages = Math.ceil(orders.length / itemsPerPage);
 
-  // Handle page change
+
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -25,7 +24,7 @@ const OrderList = ({ orders }) => {
       ))}
 
       <div className="pagination">
-        {/* Previous Button */}
+        {}
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
@@ -33,7 +32,7 @@ const OrderList = ({ orders }) => {
           Previous
         </button>
 
-        {/* Next Button */}
+        {}
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages || totalPages === 0}
