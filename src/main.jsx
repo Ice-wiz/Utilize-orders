@@ -14,10 +14,10 @@ console.log('VITE_KINDE_REDIRECT_URL:', import.meta.env.VITE_KINDE_REDIRECT_URL)
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <KindeProvider
-      clientId={import.meta.env.VITE_KINDE_CLIENT_ID}
-      domain={import.meta.env.VITE_KINDE_DOMAIN}
-      logoutUri={import.meta.env.VITE_KINDE_LOGOUT_URL}
-      redirectUri={import.meta.env.VITE_KINDE_REDIRECT_URL}
+      clientId="822dc7877be24cd083797065720e73aa"
+      domain="https://aryansharma.kinde.com"
+      logoutUri="https://utilize-orders.vercel.app"
+      redirectUri="https://utilize-orders.vercel.app"
     >
       <RecoilRoot>
         <App />
